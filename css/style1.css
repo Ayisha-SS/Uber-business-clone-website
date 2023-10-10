@@ -1,0 +1,1032 @@
+@font-face {
+    font-family: 'UberMove';
+    src: url('https://d1a3f4spazzrp4.cloudfront.net/dotcom-assets/fonts/UberMove-Light.woff2')
+        format('woff2'),
+      url('https://d1a3f4spazzrp4.cloudfront.net/dotcom-assets/fonts/UberMove-Light.woff')
+        format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'UberMove';
+    src: url('https://d1a3f4spazzrp4.cloudfront.net/dotcom-assets/fonts/UberMove-Regular.woff2')
+        format('woff2'),
+      url('https://d1a3f4spazzrp4.cloudfront.net/dotcom-assets/fonts/UberMove-Regular.woff')
+        format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'UberMove';
+    src: url('/font/UberMoveMedium.otf')
+        format('otf'),
+      url('https://d1a3f4spazzrp4.cloudfront.net/dotcom-assets/fonts/UberMove-Medium.woff')
+        format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'UberMove';
+    src: url('/font/UberMoveBold.otf')
+        format('otf'),
+      url('https://d1a3f4spazzrp4.cloudfront.net/dotcom-assets/fonts/UberMove-Bold.woff')
+        format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'UberMoveText';
+    src: url('/font/UberMoveTextLight.otf')
+        format('otf'),
+      url('https://d1a3f4spazzrp4.cloudfront.net/dotcom-assets/fonts/UberMoveText-Light.woff')
+        format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'UberMoveText';
+    src: url('/font/UberMoveTextRegular.otf')
+        format('otf'),
+      url('https://d1a3f4spazzrp4.cloudfront.net/dotcom-assets/fonts/UberMoveText-Regular.woff')
+        format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'UberMoveText';
+    src: url('/font/UberMoveTextMedium.otf')
+        format('otf'),
+      url('https://d1a3f4spazzrp4.cloudfront.net/dotcom-assets/fonts/UberMoveText-Medium.woff')
+        format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'UberMoveText';
+    src: url('/font/UberMoveTextBold.otf')
+        format('otf'),
+      url('https://d1a3f4spazzrp4.cloudfront.net/dotcom-assets/fonts/UberMoveText-Bold.woff')
+        format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'UberMoveText';
+    box-sizing: border-box;
+}
+#home{
+    background-color: black;
+  
+}
+#home header{
+    display: flex;
+    padding:18px 90px
+}
+#home .heading{
+    width:17%;
+    cursor: pointer; 
+}
+#home a img{
+    width:100%;
+    display: block;
+}
+
+#home nav.middle ul {
+    list-style-type:none;
+    display:flex;
+    color:#ffffff;
+    position: relative;
+}
+#home nav.middle ul li {
+    margin-right: 10px;
+    font-size: 16px;
+    font-family:'UberMoveText' ;
+    font-weight: 500;
+    padding: 10px 10px ;
+    display: flex;
+    white-space: nowrap;
+}
+
+#home nav.middle ul li .content {
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    padding: 50px 70px;
+    display: none;
+    top: 50px; 
+    width:1000px;
+    gap:20px;
+    border-radius: 0 0 10px 10px;
+}
+#home nav.middle ul li .content .left{
+    display: block;
+    width:35%;
+}
+
+/* #home .content span::after{
+    content:'';
+    height: 1px;
+    width:100%;
+    background-color: rgb(15, 14, 14);
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+#home .content span:hover::after{
+    content:'';
+    height: 1px;
+    width:20%;
+    background-color: black;
+    display: block;
+     
+} */
+
+#home nav.middle ul li .content .right{
+    display: block;
+    width:65%;
+}
+#home nav.middle ul li .content .up{
+    display: flex;
+   
+}
+#home nav.middle ul li .content .up .image{
+    width:25px;
+    margin-right: 5px;
+    padding: 5px;
+}
+#home nav.middle ul li .content .up img{
+    width: 100%;
+    display: block;
+}
+#home nav.middle ul li .content span{
+    font-size: 25px;
+    font-weight: 800;
+    
+}
+
+#home nav.middle .content ul li:hover{
+    background-color: transparent;
+    opacity: 0.8;
+}
+
+#home nav.middle ul li .content .right .down{
+    
+    width:50%;
+    
+}
+#home nav.middle ul li .content .down ul{
+    display: block;
+    
+    margin-top: 20px;
+}
+#home nav.middle ul li .content .down ul li{
+    color:black;
+    display: block;
+    white-space: normal;
+    padding: 0;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+#home nav.middle ul li .content  .border{
+    border-bottom: 1px solid rgb(228, 220, 220) ;
+    margin-top: 20px;
+}
+#home nav.middle ul li .content .down ul li h2{
+    font-size: 16px;
+    font-family: 'UberMoveText';
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+#home nav.middle ul li .content .down ul li p{
+    font-size: 15px;
+    font-weight: 400;
+}
+#home nav.middle ul li{
+    position: relative;
+    padding: 10px;
+}
+
+
+#home nav.middle ul li i{
+    margin-left: 10px;
+}
+#home nav.middle ul li:hover{
+    border-radius: 20px;
+    background-color:rgb(68, 68, 68);
+    cursor: pointer;
+}
+
+#home nav.middle ul li .content-2{
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    padding: 50px 70px;
+    display: none;
+    top: 50px; 
+    width:1000px;
+    border-radius: 0 0 10px 10px;
+    
+    gap:20px
+}
+#home nav.middle ul li .content-2 .left-2{
+    display: block;
+    width:65%;
+}
+#home nav.middle ul li .content-2 .right-2{
+    display: block;
+    width:35%;
+}
+#home nav.middle ul li .content-2 .up-2{
+    display: flex;
+   
+}
+#home nav.middle ul li .content-2 .down-2{
+    display: block;
+   
+}
+#home nav.middle ul li .content-2 .up-2 .image-2{
+    width:25px;
+    margin-right: 5px;
+    padding: 5px;
+}
+#home nav.middle ul li .content-2 .up-2 img{
+    width: 100%;
+    display: block;
+}
+#home nav.middle ul li .content-2 span{
+    font-size: 25px;
+    font-family: 'UberMoveText';
+    font-weight: 800;
+    
+}
+
+#home nav.middle ul li .content-2 .left-2 .down-2{
+    
+    width:45%
+}
+#home nav.middle ul li .content-2 .down-2 ul{
+    display: block;
+   
+    margin-top: 20px;
+}
+#home nav.middle ul li .content-2 .down-2 ul li{
+    
+    display: block;
+    white-space: normal;
+    padding: 0;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+#home nav.middle ul li .content-2  .border{
+    border-bottom: 1px solid rgb(228, 220, 220) ;
+    margin-top: 20px;
+}
+
+#home nav.middle ul li .content-2 .down-2 ul li h2{
+    font-size: 16px;
+    font-family: 'UberMoveText';
+    margin-bottom: 7px;
+    font-weight: 500;
+    color: #000;
+}
+#home nav.middle ul li .content-2 .down-2 ul li p{
+    font-size: 15px;
+    font-family: 'UberMoveText';
+    font-weight: 400;
+    color: #000;
+}
+#home nav.middle .content-2 ul li:hover{
+    background-color: transparent;
+    opacity: 0.8;
+}
+
+#home nav.middle ul li .content-3 {
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    padding: 50px 50px 80px 50px;
+    display: none;
+    top: 50px; 
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+    
+}
+#home nav.middle ul li .content-3 .up-3{
+    display: flex;
+   
+}
+#home nav.middle ul li .content-3 .up-3 .image-3{
+    width:25px;
+    margin-right: 5px;
+    padding: 5px;
+}
+#home nav.middle ul li .content-3 .up-3 img{
+    width: 100%;
+    display: block;
+}
+#home nav.middle ul li .content-3 span{
+    font-size: 25px;
+    font-family: 'UberMoveText';
+    font-weight: 800;
+    
+}
+#home nav.middle ul li .content-3 .down-3{
+    display: block;
+    margin-top: 20px;
+}
+#home nav.middle ul li .content-3  .border{
+    border-bottom: 1px solid rgb(228, 220, 220) ;
+    margin-top: 20px;
+}
+#home nav.middle ul li .content-3 .down-3 h2{
+    font-size: 16px;
+    font-family: 'UberMoveText';
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+#home nav.middle ul li .content-3 .down-3 p{
+    font-size: 15px;
+    font-family: 'UberMoveText';
+    font-weight: 400;
+}
+
+#home nav.middle ul li .content-4 {
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    padding: 30px 50px;
+    display: none;
+    top: 50px; 
+    flex-direction: column;
+    width:300px;
+    border-radius:  0  0 10px 10px;
+   
+}
+#home nav.middle ul li .content-4 .up-4{
+    display: flex;
+   
+}
+#home nav.middle ul li .content-4 .up-4 .image-4{
+    width:25px;
+    margin-right: 5px;
+    padding: 5px;
+}
+#home nav.middle ul li .content-4 .up-4 img{
+    width: 100%;
+    display: block;
+}
+#home nav.middle ul li .content-4 span{
+    font-size: 25px;
+    font-family: 'UberMoveText';
+    font-weight: 800;
+    
+}
+#home nav.middle ul li .content-4 .down-4 ul{
+    display: block;
+   
+    margin-top: 20px;
+}
+#home nav.middle ul li .content-4 .down-4 ul li{
+    color:black;
+    display: block;
+    white-space: normal;
+    padding: 0;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    
+}
+#home nav.middle ul li .content-4  .border{
+    border-bottom: 1px solid rgb(228, 220, 220) ;
+    margin-top: 20px;
+}
+#home nav.middle ul li .content-4 .down-4 ul li h2{
+    font-size: 16px;
+    font-family: 'UberMoveText';
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+#home nav.middle ul li .content-4 .down-4 ul li p{
+    font-size: 15px;
+    font-family: 'UberMoveText';
+    font-weight: 400;
+}
+#home nav.middle .content-4 ul li:hover{
+    background-color: transparent;
+    opacity: 0.8;
+}
+
+
+#home nav.middle ul li:last-child{
+    margin-right:60px;
+}
+
+#home nav.right{
+   margin-left: 150px;
+   display: flex;
+   padding-bottom: 40px;
+}
+#home nav.right ul{
+    list-style-type: none;
+    display: flex;
+    color:#ffffff
+}
+#home nav.right ul li{ 
+    margin-right:10px;
+    font-size: 16px;
+    font-family: 'UberMoveText';
+    padding: 10px;
+    display: flex;
+    white-space: nowrap;
+}
+#home nav.right ul li i{
+    margin-right: 10px;
+}
+#home nav.right ul li:hover{
+    cursor: pointer;
+    background-color: rgb(68, 68, 68);
+    border-radius: 20px;
+}
+#home nav.right ul li :last-child{
+    margin-right: 0px;
+}
+
+#home nav.right  a{
+    padding:10px 12px ;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: white;
+    color:black;
+    font-size: 16px;
+    font-family: 'UberMoveText';
+    font-weight: 500; 
+    white-space: nowrap;
+}
+#home nav.right a .btn{
+    padding-bottom: 10px;
+}
+
+#home nav.right ul .btn:hover{
+    cursor: pointer;
+}
+#spotlight{
+    padding-top:100px;
+    
+}
+ .wrapper{
+    width:90%;
+    margin:0 auto;
+    max-width:1500px
+}
+#spotlight .top{
+    display: flex;
+}
+#spotlight .top .left{
+    padding:0 50px;
+    padding-top:120px
+}
+
+#spotlight .top .left h1{
+    color:#ffffff;
+    
+    font-size:60px;
+    font-family: 'UberMoveText';
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#spotlight .top .left p{
+    color:#ffffff;
+    
+    font-size:20px;
+    font-family: 'UberMoveText';
+    margin-bottom: 40px;
+    line-height: 1.5em;
+}
+#spotlight .btn{
+    text-decoration: none;
+    margin-right:24px
+}
+#spotlight .button{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    padding:14px 25px;
+    font-size: 20px;
+    font-family: 'UberMoveText';
+    color:black;
+    font-weight: 500;
+}
+#spotlight .button:hover{
+    cursor: pointer;
+} 
+#spotlight .link{
+    color:white;
+    padding-left: 20px;
+    font-size: 20px;
+}
+#spotlight .link:hover{
+    cursor: pointer;
+}
+#spotlight .top .right{
+    width:60%;
+}
+#spotlight .bottom{
+    padding-left:  50px;
+}
+
+#spotlight .bottom h2{
+    color:white;
+    font-size:38px;
+    font-family: 'UberMoveText';
+    font-weight: 700;
+    width: 100%;
+    letter-spacing: 1px;
+}
+#spotlight .bottom .content ul{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#spotlight .bottom .content ul li{
+    width:50%;
+}
+#spotlight .bottom .content ul li h3{
+    color:#ffffff;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+#spotlight .bottom .content ul li p{
+    color:#ffffff;
+    margin-top: 20px;
+    padding-bottom: 110px;
+    font-size:20px;
+    line-height: 1.5;
+    font-weight: normal;
+
+}
+#spotlight .bottom .content ul li p a{
+    color:#ffffff;
+    cursor: pointer;
+}
+#second{
+    padding-top:100px;
+}
+#second .content-up{
+    
+    padding:0 50px;
+}
+#second .content-up h2{
+    font-size: 40px;
+}
+#second .content-up ul{
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+}
+#second ul li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#second ul li span{
+    font-size: 23px;
+    padding: 35px 40px;
+    font-weight: bold;
+}
+#second ul li img:hover{
+    cursor: pointer;
+    transform:scale(1.3);
+    transition: 0.1s;
+}
+#second ul li span:hover{
+    cursor: pointer;
+}
+#second .content-down{
+    padding:100px 50px;
+    
+}
+#second .content-down h2{
+    font-size: 40px;
+}
+#second .content-down .content{
+    display: flex;
+    padding-top: 50px;
+    position: relative;
+}
+
+#second .content .container{
+    display: flex;
+    flex-direction: column;
+   }
+#second .container .center-line{
+    position:absolute;
+    height: 40%;
+    width:1px;
+    background: black;
+    left:40%;
+    transform: translate(-50%);
+    }
+.center-line::after,.center-line::before{
+    content: '';
+    top:45%;
+    bottom: 45%;
+}
+.center-line::after{
+    top:0;
+}
+.center-line::before{
+    bottom: 0;
+}
+#second .container .contents{
+    display:flex;
+    gap:100px
+}
+#second .container .contents .image{
+    width:50%;
+    margin-bottom: 80px;
+}
+#second .container .contents .image img{
+    display: block;
+}
+#second .contents .right{
+    padding-left: 40px;
+    width:85%
+}
+#second .contents .right h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+#second .contents .right p{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+.vertical-line{
+    display:block; 
+    position: absolute; 
+}
+
+.v1{
+    border-left: 1px solid black;
+    margin-left: 110px;
+    height:30vh;
+    margin-bottom: 50px;
+}
+.v2{
+    border-left: 1px solid black;
+    margin-left: 110px;
+    height:30vh;
+}
+
+#third{
+    background-color: rgb(245, 242, 242);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#third .content{
+    padding:0 50px;
+}
+#third .content h2{
+    font-size: 45px;
+    text-align: center;
+    padding:0 200px
+    
+}
+#third .companies{
+    display: inline-flex;
+    width: 30%;
+}
+#third .companies img{
+    width: 100%;
+    display: block;
+}
+#third .content-dwn{
+    display:flex;
+    gap:10%;
+    margin-bottom: 50px;
+}
+#third .content-dwn .left{
+    width:26%;
+    padding-top: 120px;
+    
+    
+}
+#third .content-dwn .left h3{
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+#third .content-dwn .left p{
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    line-height: 1.5rem;
+}
+#third .content-dwn .left span{
+    color:gray
+}
+#third .conent-dwn .right{
+    width:30%;
+    
+    cursor: pointer;
+
+}
+#third .content-dwn .right img{
+    width: 100%;
+    display: block;
+}
+#fourth{
+    background-color: rgb(21, 21, 94);
+    padding:100px ;
+    display: block;
+}
+#fourth h1{
+    font-size: 50px;
+    color:#ffffff;
+    text-align: center;
+    padding: 0 200px;
+    margin-bottom:50px ;
+}
+#fourth a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+#fourth button{
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+#fourth button:hover{
+    cursor: pointer;
+    background-color: rgb(250, 252, 252);
+}
+#fifth{
+    padding:50px;
+}
+#fifth .content{
+    /* padding-left: 50px */
+}
+#fifth .content h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight:700 ;
+}
+#fifth .content .element{
+    display:flex;
+    column-gap: 50px;
+    
+}
+#fifth .element  .element-1{
+    width:100%
+}
+#fifth .element  .element-1 image{
+    width:30%;
+    margin-bottom: 20px;
+   
+}
+#fifth .element  .element-1 img{
+    width:100%;
+    display: block;
+}
+#fifth .element-1 h4{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+#fifth .element-1 a{
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+    cursor: pointer; 
+}
+#fifth .element-1 a::after{
+    content:'';
+    height: 1px;
+    width:10%;
+    background-color: rgb(245, 239, 239);
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+#fifth .element-1 a:hover::after{
+    content:'';
+    height: 1px;
+    width:20%;
+    background-color: black;
+    display: block;
+    
+    
+}
+#fifth .content-down{
+    padding:60px 0 30px 0 ;
+    
+}
+#fifth .content-down p{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color:#000;
+    font-weight: 200;
+}
+#fifth .content-down p a{
+    color:black;
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#fifth .content-down p:last-child{
+    margin-bottom:0;
+}
+#sixth{
+    background-color: black;
+}
+#sixth .content{
+    padding:100px 0 0 50px;
+}
+#sixth .content a.head{
+    text-decoration: none;
+    font-size: 25px;
+    color:#ffffff;
+    cursor: pointer;
+    
+}
+#sixth .content .element{
+    width:10%;
+    height:70px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#sixth .content .element a{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color:#ffffff;
+}
+#sixth .content .element:hover{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    
+}
+#sixth .content .terms{
+    display: flex;
+    color:#ffffff;
+    column-gap: 13%;
+}
+#sixth .content .terms ul{
+    list-style-type: none;
+    line-height: 2.5em;
+
+}
+#sixth .content .terms ul li{
+    font-size: 16px;
+    font-weight:400;
+}
+#sixth .content .terms ul li.main{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#sixth .content .terms ul li:hover{
+    cursor: pointer;
+    color:gray
+}
+#sixth .content .details{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+/* #sixth .content .social{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    
+} */
+
+#sixth .content .social i{
+    color:#ffffff;  
+    font-size: 18px;
+    margin-right: 50px;  
+    padding: 20px; 
+}
+
+#sixth .content .social i:first-child{
+    margin-left:-20px ;
+}
+#sixth .content .social i:hover{
+    cursor:pointer;
+    border-radius: 5px;
+    background-color: rgb(68, 68, 68);
+    
+}
+#sixth .content .contact{
+    color:#ffffff;
+}
+#sixth .content .contact i{
+    color:#ffffff;
+    font-size: 16px;
+    margin-right:50px ;
+    padding: 10px;
+}
+#sixth .content .contact i:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(68, 68, 68);  
+}
+#sixth .content .contact span{
+    margin-left: 10px;
+}
+#sixth .icon{
+    background-color: black;
+    width:10%;
+    display: flex;
+    padding-top: 50px;
+    gap:15px
+}
+#sixth .icon:hover{
+    cursor: pointer;
+}
+#sixth .icon img{
+    width:100%;
+    display: block;
+}
+#sixth footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+#sixth footer .left i{
+    color:gray;
+    font-size: 15px;
+}
+#sixth footer .left{
+    font-size: 16px;
+    color:gray;
+}
+#sixth footer .right{
+    font-size: 16px;
+    color:gray;
+   
+}
+#sixth footer .right ul{
+    list-style-type: none;
+    display: flex;
+    gap:20px
+}
+#button{
+    padding: 20px;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    justify-content: center;
+}
+#button a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#ffffff;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 95%;
+    margin: 10px 0 ;
+   
+    
+}
+#button a:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.1s;
+}
+
+
+
+
+
+
+
