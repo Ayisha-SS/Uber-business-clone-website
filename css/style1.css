@@ -85,6 +85,7 @@
     padding: 0;
     font-family: 'UberMoveText';
     box-sizing: border-box;
+    text-decoration: none;
 }
 #home{
     background-color: black;
@@ -92,11 +93,13 @@
 }
 #home header{
     display: flex;
-    padding:18px 90px
+    padding:18px 90px;
+    /* margin-top: 10px; */
 }
 #home .heading{
     width:17%;
     cursor: pointer; 
+    
 }
 #home a img{
     width:100%;
@@ -106,15 +109,15 @@
 #home nav.middle ul {
     list-style-type:none;
     display:flex;
+    
     color:#ffffff;
     position: relative;
 }
-#home nav.middle ul li {
-    margin-right: 10px;
+#home nav.middle ul li a{
+    color: #fff;
     font-size: 16px;
     font-family:'UberMoveText' ;
     font-weight: 500;
-    padding: 10px 10px ;
     display: flex;
     white-space: nowrap;
 }
@@ -125,11 +128,18 @@
     background-color: #fff;
     padding: 50px 70px;
     display: none;
+    /* display:flex; */
+    /* flex-direction: column; */
     top: 50px; 
     width:1000px;
     gap:20px;
     border-radius: 0 0 10px 10px;
 }
+
+#home nav.middle ul .dropdown.active + .content{
+    display: flex;  
+} 
+
 #home nav.middle ul li .content .left{
     display: block;
     width:35%;
@@ -157,11 +167,10 @@
     width:65%;
 }
 #home nav.middle ul li .content .up{
-    display: flex;
-   
+    display: flex;  
 }
 #home nav.middle ul li .content .up .image{
-    width:25px;
+    width:30px;
     margin-right: 5px;
     padding: 5px;
 }
@@ -181,7 +190,7 @@
 }
 
 #home nav.middle ul li .content .right .down{
-    
+
     width:50%;
     
 }
@@ -227,60 +236,47 @@
     cursor: pointer;
 }
 
-#home nav.middle ul li .content-2{
-    position: absolute;
-    color: #000;
-    background-color: #fff;
-    padding: 50px 70px;
-    display: none;
-    top: 50px; 
-    width:1000px;
-    border-radius: 0 0 10px 10px;
-    
-    gap:20px
-}
-#home nav.middle ul li .content-2 .left-2{
+#home nav.middle ul li .content .left-2{
     display: block;
     width:65%;
 }
-#home nav.middle ul li .content-2 .right-2{
+#home nav.middle ul li .content .right-2{
     display: block;
     width:35%;
 }
-#home nav.middle ul li .content-2 .up-2{
+#home nav.middle ul li .content .up-2{
     display: flex;
    
 }
-#home nav.middle ul li .content-2 .down-2{
+#home nav.middle ul li .content .down-2{
     display: block;
    
 }
-#home nav.middle ul li .content-2 .up-2 .image-2{
+#home nav.middle ul li .content .up-2 .image-2{
     width:25px;
     margin-right: 5px;
     padding: 5px;
 }
-#home nav.middle ul li .content-2 .up-2 img{
+#home nav.middle ul li .content .up-2 img{
     width: 100%;
     display: block;
 }
-#home nav.middle ul li .content-2 span{
+#home nav.middle ul li .content span{
     font-size: 25px;
     font-family: 'UberMoveText';
-    font-weight: 800;
-    
+    font-weight: 800;  
 }
 
-#home nav.middle ul li .content-2 .left-2 .down-2{
+#home nav.middle ul li .content .left-2 .down-2{
     
     width:45%
 }
-#home nav.middle ul li .content-2 .down-2 ul{
+#home nav.middle ul li .content .down-2 ul{
     display: block;
    
     margin-top: 20px;
 }
-#home nav.middle ul li .content-2 .down-2 ul li{
+#home nav.middle ul li .content .down-2 ul li{
     
     display: block;
     white-space: normal;
@@ -288,117 +284,99 @@
     line-height: 1.5;
     margin-bottom: 20px;
 }
-#home nav.middle ul li .content-2  .border{
+#home nav.middle ul li .content  .border{
     border-bottom: 1px solid rgb(228, 220, 220) ;
     margin-top: 20px;
 }
 
-#home nav.middle ul li .content-2 .down-2 ul li h2{
+#home nav.middle ul li .content .down-2 ul li h2{
     font-size: 16px;
     font-family: 'UberMoveText';
     margin-bottom: 7px;
     font-weight: 500;
     color: #000;
 }
-#home nav.middle ul li .content-2 .down-2 ul li p{
+#home nav.middle ul li .content .down-2 ul li p{
     font-size: 15px;
     font-family: 'UberMoveText';
     font-weight: 400;
     color: #000;
 }
-#home nav.middle .content-2 ul li:hover{
+#home nav.middle .content ul li:hover{
     background-color: transparent;
     opacity: 0.8;
 }
 
-#home nav.middle ul li .content-3 {
-    position: absolute;
-    color: #000;
-    background-color: #fff;
-    padding: 50px 50px 80px 50px;
-    display: none;
-    top: 50px; 
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 0 0 10px 10px;
-    
+#home nav.middle ul li  #element3{
+    /* display: block; */
+    width:500px
 }
-#home nav.middle ul li .content-3 .up-3{
+#home nav.middle ul li .content .up-3{
     display: flex;
    
 }
-#home nav.middle ul li .content-3 .up-3 .image-3{
+#home nav.middle ul li .content .up-3 .image-3{
     width:25px;
     margin-right: 5px;
     padding: 5px;
 }
-#home nav.middle ul li .content-3 .up-3 img{
+#home nav.middle ul li .content .up-3 img{
     width: 100%;
     display: block;
 }
-#home nav.middle ul li .content-3 span{
+#home nav.middle ul li .content span{
     font-size: 25px;
     font-family: 'UberMoveText';
     font-weight: 800;
     
 }
-#home nav.middle ul li .content-3 .down-3{
+#home nav.middle ul li .content .down-3{
     display: block;
     margin-top: 20px;
 }
-#home nav.middle ul li .content-3  .border{
+#home nav.middle ul li .content  .border{
     border-bottom: 1px solid rgb(228, 220, 220) ;
     margin-top: 20px;
 }
-#home nav.middle ul li .content-3 .down-3 h2{
+#home nav.middle ul li .content .down-3 h2{
     font-size: 16px;
     font-family: 'UberMoveText';
     margin-bottom: 7px;
     font-weight: 600;
 }
-#home nav.middle ul li .content-3 .down-3 p{
+#home nav.middle ul li .content .down-3 p{
     font-size: 15px;
     font-family: 'UberMoveText';
     font-weight: 400;
 }
 
-#home nav.middle ul li .content-4 {
-    position: absolute;
-    color: #000;
-    background-color: #fff;
-    padding: 30px 50px;
-    display: none;
-    top: 50px; 
-    flex-direction: column;
-    width:300px;
-    border-radius:  0  0 10px 10px;
-   
+#home nav.middle ul li  #element4{
+    /* display: block; */
+    width:500px
 }
-#home nav.middle ul li .content-4 .up-4{
-    display: flex;
-   
+
+#home nav.middle ul li .content .up-4{
+    display: flex; 
 }
-#home nav.middle ul li .content-4 .up-4 .image-4{
+#home nav.middle ul li .content .up-4 .image-4{
     width:25px;
     margin-right: 5px;
     padding: 5px;
 }
-#home nav.middle ul li .content-4 .up-4 img{
+#home nav.middle ul li .content .up-4 img{
     width: 100%;
     display: block;
 }
-#home nav.middle ul li .content-4 span{
+#home nav.middle ul li .content span{
     font-size: 25px;
     font-family: 'UberMoveText';
-    font-weight: 800;
-    
+    font-weight: 800;  
 }
-#home nav.middle ul li .content-4 .down-4 ul{
+#home nav.middle ul li .content .down-4 ul{
     display: block;
-   
     margin-top: 20px;
 }
-#home nav.middle ul li .content-4 .down-4 ul li{
+#home nav.middle ul li .content .down-4 ul li{
     color:black;
     display: block;
     white-space: normal;
@@ -407,31 +385,28 @@
     margin-bottom: 10px;
     
 }
-#home nav.middle ul li .content-4  .border{
+#home nav.middle ul li .content  .border{
     border-bottom: 1px solid rgb(228, 220, 220) ;
     margin-top: 20px;
 }
-#home nav.middle ul li .content-4 .down-4 ul li h2{
+#home nav.middle ul li .content .down-4 ul li h2{
     font-size: 16px;
     font-family: 'UberMoveText';
     margin-bottom: 7px;
     font-weight: 600;
 }
-#home nav.middle ul li .content-4 .down-4 ul li p{
+#home nav.middle ul li .content .down-4 ul li p{
     font-size: 15px;
     font-family: 'UberMoveText';
     font-weight: 400;
 }
-#home nav.middle .content-4 ul li:hover{
+#home nav.middle .content ul li:hover{
     background-color: transparent;
     opacity: 0.8;
 }
-
-
 #home nav.middle ul li:last-child{
     margin-right:60px;
 }
-
 #home nav.right{
    margin-left: 150px;
    display: flex;
@@ -532,12 +507,11 @@
 } 
 #spotlight .link{
     color:white;
+    text-decoration: underline;
     padding-left: 20px;
     font-size: 20px;
 }
-#spotlight .link:hover{
-    cursor: pointer;
-}
+
 #spotlight .top .right{
     width:60%;
 }
@@ -557,7 +531,6 @@
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    
 }
 #spotlight .bottom .content ul li{
     width:50%;
@@ -996,7 +969,8 @@
     gap:20px
 }
 #button{
-    padding: 20px;
+    
+    padding: 10px;
     display: none;
     position: fixed;
     bottom: 0;
@@ -1011,12 +985,10 @@
     background-color: black;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     width: 95%;
-    margin: 10px 0 ;
-   
-    
+    margin: 10px 0 ;  
 }
 #button a:hover{
     cursor: pointer;

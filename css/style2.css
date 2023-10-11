@@ -86,6 +86,7 @@
     padding: 0;
     font-family: 'UberMoveText';
     box-sizing: border-box;
+    text-decoration: none;
 }
 .wrapper{
     width:90%;
@@ -96,6 +97,7 @@
     display: flex;
     padding:18px 90px;
     background-color: black;
+    /* margin-top: 10px; */
 }
 #start a.heading{
     width:15%;
@@ -119,16 +121,21 @@
     color:#ffffff;
 }
 #start nav.middle ul li{
-    margin-right: 10px;
-    font-size: 16px;
-    font-weight: 500;
+    position: relative;
     padding: 10px;
+}
+#start nav.middle ul li a{
+    font-size: 16px;
+    font-family: 'UberMoveText';
+    font-weight: 500;
+    /* padding: 10px; */
+    color: #fff;
     display: flex;
     white-space: nowrap;
 }
-#start nav.middle ul li i{
+/* #start nav.middle ul li i{
     margin-left: 10px;
-}
+} */
 #start nav.middle ul li:hover{
     border-radius: 20px;
     background-color:rgb(68, 68, 68);
@@ -137,7 +144,9 @@
 #start nav.middle ul li:last-child{
     margin-right:60px;
 }
-
+#start nav.middle ul li i{
+    margin-left: 10px;
+}
 #start nav.middle ul li .content {
     position: absolute;
     color: #000;
@@ -149,6 +158,10 @@
     gap:20px;
     border-radius: 0 0 10px 10px;
 }
+#start nav.middle ul .dropdown.active + .content{
+    display: flex;  
+} 
+
 #start nav.middle ul li .content .left{
     display: block;
     width:35%;
@@ -211,61 +224,50 @@
 #start nav.middle ul li .content .down ul li p{
     font-size: 15px;
     font-weight: 400;
+    color: #000;
 }
 
-#start nav.middle ul li .content-2{
-    position: absolute;
-    color: #000;
-    background-color: #fff;
-    padding: 50px 70px;
-    display: none;
-    top: 50px; 
-    width:1000px;
-    border-radius: 0 0 10px 10px;
-    
-    gap:20px
-}
-#start nav.middle ul li .content-2 .left-2{
+#start nav.middle ul li .content .left-2{
     display: block;
     width:65%;
 }
-#start nav.middle ul li .content-2 .right-2{
+#start nav.middle ul li .content .right-2{
     display: block;
     width:35%;
 }
-#start nav.middle ul li .content-2 .up-2{
+#start nav.middle ul li .content .up-2{
     display: flex;
    
 }
-#start nav.middle ul li .content-2 .down-2{
+#start nav.middle ul li .content .down-2{
     display: block;
    
 }
-#start nav.middle ul li .content-2 .up-2 .image-2{
+#start nav.middle ul li .content .up-2 .image-2{
     width:25px;
     margin-right: 5px;
     padding: 5px;
 }
-#start nav.middle ul li .content-2 .up-2 img{
+#start nav.middle ul li .content .up-2 img{
     width: 100%;
     display: block;
 }
-#start nav.middle ul li .content-2 span{
+#start nav.middle ul li .content span{
     font-size: 25px;
     font-weight: 800;
     
 }
 
-#start nav.middle ul li .content-2 .left-2 .down-2{
+#start nav.middle ul li .content .left-2 .down-2{
     
     width:45%
 }
-#start nav.middle ul li .content-2 .down-2 ul{
+#start nav.middle ul li .content .down-2 ul{
     display: block;
    
     margin-top: 20px;
 }
-#start nav.middle ul li .content-2 .down-2 ul li{
+#start nav.middle ul li .content .down-2 ul li{
     
     display: block;
     white-space: normal;
@@ -273,112 +275,95 @@
     line-height: 1.5;
     margin-bottom: 20px;
 }
-#start nav.middle ul li .content-2  .border{
+#start nav.middle ul li .content  .border{
     border-bottom: 1px solid rgb(228, 220, 220) ;
     margin-top: 20px;
 }
 
-#start nav.middle ul li .content-2 .down-2 ul li h2{
+#start nav.middle ul li .content .down-2 ul li h2{
     font-size: 16px;
     margin-bottom: 7px;
     font-weight: 500;
     color: #000;
 }
-#start nav.middle ul li .content-2 .down-2 ul li p{
+#start nav.middle ul li .content .down-2 ul li p{
     font-size: 15px;
     font-weight: 400;
     color: #000;
 }
-#start nav.middle .content-2 ul li:hover{
+#start nav.middle .content ul li:hover{
     background-color: transparent;
     opacity: 0.8;
 }
 
-#start nav.middle ul li .content-3 {
-    position: absolute;
-    color: #000;
-    background-color: #fff;
-    padding: 50px 50px 80px 50px;
-    display: none;
-    top: 50px; 
-    flex-direction: column;
-    justify-content: center;
-    
-    border-radius: 0 0 10px 10px;
-    
+#start nav.middle ul li  #element3{
+    /* display: block; */
+    width:500px
 }
-#start nav.middle ul li .content-3 .up-3{
+#start nav.middle ul li .content .up-3{
     display: flex;
    
 }
-#start nav.middle ul li .content-3 .up-3 .image-3{
+#start nav.middle ul li .content .up-3 .image-3{
     width:25px;
     margin-right: 5px;
     padding: 5px;
 }
-#start nav.middle ul li .content-3 .up-3 img{
+#start nav.middle ul li .content .up-3 img{
     width: 100%;
     display: block;
 }
-#start nav.middle ul li .content-3 span{
+#start nav.middle ul li .content span{
     font-size: 25px;
     font-weight: 800;
     
 }
-#start nav.middle ul li .content-3 .down-3{
+#start nav.middle ul li .content .down-3{
     display: block;
     margin-top: 20px;
 }
-#start nav.middle ul li .content-3  .border{
+#start nav.middle ul li .content  .border{
     border-bottom: 1px solid rgb(228, 220, 220) ;
     margin-top: 20px;
 }
-#start nav.middle ul li .content-3 .down-3 h2{
+#start nav.middle ul li .content .down-3 h2{
     font-size: 16px;
     margin-bottom: 7px;
     font-weight: 600;
 }
-#start nav.middle ul li .content-3 .down-3 p{
+#start nav.middle ul li .content .down-3 p{
     font-size: 15px;
     font-weight: 400;
 }
 
-#start nav.middle ul li .content-4 {
-    position: absolute;
-    color: #000;
-    background-color: #fff;
-    padding: 30px 50px;
-    display: none;
-    top: 50px; 
-    flex-direction: column;
-    width:300px;
-    border-radius:  0  0 10px 10px;
-    
+#start nav.middle ul li  #element3{
+    /* display: block; */
+    width:500px
 }
-#start nav.middle ul li .content-4 .up-4{
+#start nav.middle ul li .content .up-4{
     display: flex;
    
 }
-#start nav.middle ul li .content-4 .up-4 .image-4{
+#start nav.middle ul li .content .up-4 .image-4{
     width:25px;
     margin-right: 5px;
     padding: 5px;
 }
-#start nav.middle ul li .content-4 .up-4 img{
+#start nav.middle ul li .content .up-4 img{
     width: 100%;
     display: block;
 }
-#start nav.middle ul li .content-4 span{
+#start nav.middle ul li .content span{
     font-size: 25px;
     font-weight: 800;
     
 }
-#start nav.middle ul li .content-4 .down-4 ul{
+#start nav.middle ul li .content .down-4 ul{
     display: block;
    
     margin-top: 20px;
 }
-#start nav.middle ul li .content-4 .down-4 ul li{
+#start nav.middle ul li .content .down-4 ul li{
     color:black;
     display: block;
     white-space: normal;
@@ -387,20 +372,20 @@
     margin-bottom: 10px;
     
 }
-#start nav.middle ul li .content-4  .border{
+#start nav.middle ul li .content  .border{
     border-bottom: 1px solid rgb(228, 220, 220) ;
     margin-top: 20px;
 }
-#start nav.middle ul li .content-4 .down-4 ul li h2{
+#start nav.middle ul li .content .down-4 ul li h2{
     font-size: 16px;
     margin-bottom: 7px;
     font-weight: 600;
 }
-#start nav.middle ul li .content-4 .down-4 ul li p{
+#start nav.middle ul li .content .down-4 ul li p{
     font-size: 15px;
     font-weight: 400;
 }
-#start nav.middle .content-4 ul li:hover{
+#start nav.middle .content ul li:hover{
     background-color: transparent;
     opacity: 0.8;
 }
