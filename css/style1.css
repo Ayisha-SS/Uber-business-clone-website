@@ -86,6 +86,7 @@
     font-family: 'UberMoveText';
     box-sizing: border-box;
     text-decoration: none;
+    list-style-type: none;
 }
 #home{
     background-color: black;
@@ -107,9 +108,7 @@
 }
 
 #home nav.middle ul {
-    list-style-type:none;
     display:flex;
-    
     color:#ffffff;
     position: relative;
 }
@@ -128,8 +127,6 @@
     background-color: #fff;
     padding: 50px 70px;
     display: none;
-    /* display:flex; */
-    /* flex-direction: column; */
     top: 50px; 
     width:1000px;
     gap:20px;
@@ -223,7 +220,6 @@
     padding: 10px;
 }
 
-
 #home nav.middle ul li i{
     margin-left: 10px;
 }
@@ -247,10 +243,10 @@
 }
 #home nav.middle ul li .content .down-2{
     display: block;
-   
+    
 }
 #home nav.middle ul li .content .up-2 .image-2{
-    width:25px;
+    width:30px;
     margin-right: 5px;
     padding: 5px;
 }
@@ -305,8 +301,8 @@
 }
 
 #home nav.middle ul li  #element3{
-    /* display: block; */
-    width:500px
+    flex-direction: column;
+    width:400px
 }
 #home nav.middle ul li .content .up-3{
     display: flex;
@@ -348,7 +344,7 @@
 }
 
 #home nav.middle ul li  #element4{
-    /* display: block; */
+    flex-direction: column;
     width:500px
 }
 
@@ -444,9 +440,14 @@
     font-family: 'UberMoveText';
     font-weight: 500; 
     white-space: nowrap;
+    margin-right: 10px;
+}
+#home nav.right a i{
+    margin-right: 5px;
 }
 #home nav.right a .btn{
     padding-bottom: 10px;
+    
 }
 
 #home nav.right ul .btn:hover{
@@ -555,7 +556,6 @@
     padding-top:100px;
 }
 #second .content-up{
-    
     padding:0 50px;
 }
 #second .content-up h2{
@@ -567,10 +567,8 @@
     justify-content: space-between;
 }
 #second ul li{
-    list-style-type: none;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 
 #second ul li span{
@@ -580,8 +578,8 @@
 }
 #second ul li img:hover{
     cursor: pointer;
-    transform:scale(1.3);
-    transition: 0.1s;
+    transform:scale(1.2);
+    transition: 0.2s;
 }
 #second ul li span:hover{
     cursor: pointer;
@@ -740,7 +738,6 @@
 #fourth a{
     display: flex;
     justify-content: center;
-    text-decoration: none;
 }
 #fourth button{
     font-size: 20px;
@@ -755,9 +752,6 @@
 #fifth{
     padding:50px;
 }
-#fifth .content{
-    /* padding-left: 50px */
-}
 #fifth .content h2{
     font-size: 40px;
     margin-bottom: 50px;
@@ -765,8 +759,7 @@
 }
 #fifth .content .element{
     display:flex;
-    column-gap: 50px;
-    
+    column-gap: 50px; 
 }
 #fifth .element  .element-1{
     width:100%
@@ -774,7 +767,6 @@
 #fifth .element  .element-1 image{
     width:30%;
     margin-bottom: 20px;
-   
 }
 #fifth .element  .element-1 img{
     width:100%;
@@ -789,7 +781,6 @@
 #fifth .element-1 a{
     font-size: 16px;
     color:black;
-    text-decoration: none;
     cursor: pointer; 
 }
 #fifth .element-1 a::after{
@@ -805,13 +796,10 @@
     height: 1px;
     width:20%;
     background-color: black;
-    display: block;
-    
-    
+    display: block;   
 }
 #fifth .content-down{
     padding:60px 0 30px 0 ;
-    
 }
 #fifth .content-down p{
     font-size: 16px;
@@ -822,7 +810,6 @@
 #fifth .content-down p a{
     color:black;
     border-bottom: 1px solid gray;
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -836,7 +823,6 @@
     padding:100px 0 0 50px;
 }
 #sixth .content a.head{
-    text-decoration: none;
     font-size: 25px;
     color:#ffffff;
     cursor: pointer;
@@ -851,7 +837,6 @@
 #sixth .content .element a{
     font-size: 16px;
     font-weight: 400;
-    text-decoration: none;
     color:#ffffff;
 }
 #sixth .content .element:hover{
@@ -865,7 +850,6 @@
     column-gap: 13%;
 }
 #sixth .content .terms ul{
-    list-style-type: none;
     line-height: 2.5em;
 
 }
@@ -888,12 +872,6 @@
     padding-top: 100px;
 }
 
-/* #sixth .content .social{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    
-} */
 
 #sixth .content .social i{
     color:#ffffff;  
@@ -961,13 +939,11 @@
    
 }
 #sixth footer .right ul{
-    list-style-type: none;
     display: flex;
     gap:20px
 }
 #button{
-    
-    padding: 10px;
+    padding: 5px;
     display: none;
     position: fixed;
     bottom: 0;
@@ -976,7 +952,6 @@
     justify-content: center;
 }
 #button a{
-    text-decoration: none;
     font-size: 18px;
     color:#ffffff;
     background-color: black;

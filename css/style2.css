@@ -87,6 +87,7 @@
     font-family: 'UberMoveText';
     box-sizing: border-box;
     text-decoration: none;
+    list-style-type: none;
 }
 .wrapper{
     width:90%;
@@ -97,7 +98,6 @@
     display: flex;
     padding:18px 90px;
     background-color: black;
-    /* margin-top: 10px; */
 }
 #start a.heading{
     width:15%;
@@ -109,14 +109,7 @@
     
 }
 
-/* #start nav.middle{
-    padding: 10px 12px;
-    margin-right: 100px;
-    margin-left: 100px;
-} */
-
 #start nav.middle ul {
-    list-style-type:none;
     display:flex;
     color:#ffffff;
 }
@@ -128,14 +121,11 @@
     font-size: 16px;
     font-family: 'UberMoveText';
     font-weight: 500;
-    /* padding: 10px; */
     color: #fff;
     display: flex;
     white-space: nowrap;
 }
-/* #start nav.middle ul li i{
-    margin-left: 10px;
-} */
+
 #start nav.middle ul li:hover{
     border-radius: 20px;
     background-color:rgb(68, 68, 68);
@@ -195,7 +185,6 @@
 }
 
 #start nav.middle ul li .content .right .down{
-    
     width:50%
 }
 #start nav.middle ul li .content .down ul{
@@ -255,20 +244,16 @@
 #start nav.middle ul li .content span{
     font-size: 25px;
     font-weight: 800;
-    
 }
 
 #start nav.middle ul li .content .left-2 .down-2{
-    
     width:45%
 }
 #start nav.middle ul li .content .down-2 ul{
     display: block;
-   
     margin-top: 20px;
 }
-#start nav.middle ul li .content .down-2 ul li{
-    
+#start nav.middle ul li .content .down-2 ul li{ 
     display: block;
     white-space: normal;
     padding: 0;
@@ -295,9 +280,7 @@
     background-color: transparent;
     opacity: 0.8;
 }
-
 #start nav.middle ul li  #element3{
-    /* display: block; */
     width:500px
 }
 #start nav.middle ul li .content .up-3{
@@ -337,7 +320,6 @@
 }
 
 #start nav.middle ul li  #element3{
-    /* display: block; */
     width:500px
 }
 #start nav.middle ul li .content .up-4{
@@ -360,7 +342,6 @@
 }
 #start nav.middle ul li .content .down-4 ul{
     display: block;
-   
     margin-top: 20px;
 }
 #start nav.middle ul li .content .down-4 ul li{
@@ -396,7 +377,6 @@
    padding-bottom: 40px;
 }
 #start nav.right ul{
-    list-style-type: none;
     display: flex;
     color:#ffffff
 }
@@ -422,13 +402,16 @@
 }
 #start nav.right a{
     padding: 10px 12px;
-    text-decoration: none;
     border-radius: 30px;
     background-color: white;
     color: black;
     font-size: 16px;
     font-weight: 500;
     white-space: nowrap;
+    margin-right:10px
+}
+#start nav.right a i{
+    margin-right: 5px;
 }
 #start nav.right a.btn{
     padding-bottom: 10px;
@@ -478,7 +461,6 @@
     margin-bottom: 10px;
 }
 #spotlight a{
-    text-decoration: none;
     color:#ffffff;
     background-color: black;
     border-radius: 10px;
@@ -537,7 +519,6 @@
     
 }
 #second .element-cntnt .button a{
-    text-decoration: none;
     color:rgb(42, 40, 40);
     font-size: 16px;
     border-bottom: 1px solid gray;
@@ -550,22 +531,20 @@
     padding:100px 0 0 50px;
 }
 #third .content a.head{
-    text-decoration: none;
     font-size: 40px;
     color:#ffffff;
     cursor: pointer;
     
 }
 #third .content .element{
-    width:13%;
-    height:90px;
+    width:10%;
+    height:70px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 #third .content .element a{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    text-decoration: none;
     color:#ffffff;
 }
 #third .content .element:hover{
@@ -575,10 +554,9 @@
 #third .content .terms{
     display: flex;
     color:#ffffff;
-    column-gap: 15%;
+    column-gap: 13%;
 }
 #third .content .terms ul{
-    list-style-type: none;
     line-height: 2.5em;
 
 }
@@ -601,17 +579,10 @@
     padding-top: 100px;
 }
 
-/* #third .content .social{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    
-} */
-
 #third .content .social i{
     color:#ffffff;  
     font-size: 18px;
-    margin-right: 80px;  
+    margin-right: 50px;  
     padding: 20px; 
 }
 #third .content .social i:first-child{
@@ -673,7 +644,6 @@
    
 }
 #third footer .right ul{
-    list-style-type: none;
     display: flex;
     gap:20px
 }
