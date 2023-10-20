@@ -21,17 +21,27 @@ window.addEventListener("scroll", () => {
 var dropdown = document.querySelectorAll(".dropdown");
 var contents = document.querySelectorAll(".content");
 
+
 dropdown.forEach(function (dropdownItem) {
-    dropdownItem.addEventListener("click", function (e) {
-        
-        if (!e.target.classList.contains('active')) {
-            dropdown.forEach(function (dropdownItem) {
-                dropdownItem.classList.remove("active");
-            });
-        }
-        e.target.classList.toggle('active');
-    });
+  dropdownItem.addEventListener("click", function (e) {
+    
+    if (!e.target.classList.contains('active')) {
+      dropdown.forEach(function (dropdownItem) {
+        dropdownItem.classList.remove("active"); 
+      });
+    }
+    e.target.classList.toggle('active');
+  });
 });
+
+
+// active......
+function rotate(x){
+  var element = document.getElementById(x);
+  element.classList.toggle('style');
+}
+
+
 
 
 // window click.......

@@ -96,22 +96,22 @@
 }
 #start header{
     display: flex;
-    padding:18px 90px;
+    padding:10px 90px 0px 90px;
     background-color: black;
 }
 #start a.heading{
-    width:15%;
+    width:10%;
     cursor: pointer;
 }
 #start a img{
     width:100%;
-    display: block;
-    
+    display: block; 
 }
 
 #start nav.middle ul {
     display:flex;
     color:#ffffff;
+    padding:10px;
 }
 #start nav.middle ul li{
     position: relative;
@@ -175,8 +175,7 @@
 }
 #start nav.middle ul li .content span{
     font-size: 25px;
-    font-weight: 800;
-    
+    font-weight: 800;  
 }
 
 #start nav.middle .content ul li:hover{
@@ -189,7 +188,6 @@
 }
 #start nav.middle ul li .content .down ul{
     display: block;
-   
     margin-top: 20px;
 }
 #start nav.middle ul li .content .down ul li{
@@ -226,11 +224,9 @@
 }
 #start nav.middle ul li .content .up-2{
     display: flex;
-   
 }
 #start nav.middle ul li .content .down-2{
     display: block;
-   
 }
 #start nav.middle ul li .content .up-2 .image-2{
     width:25px;
@@ -285,7 +281,6 @@
 }
 #start nav.middle ul li .content .up-3{
     display: flex;
-   
 }
 #start nav.middle ul li .content .up-3 .image-3{
     width:25px;
@@ -299,7 +294,6 @@
 #start nav.middle ul li .content span{
     font-size: 25px;
     font-weight: 800;
-    
 }
 #start nav.middle ul li .content .down-3{
     display: block;
@@ -320,7 +314,12 @@
 }
 
 #start nav.middle ul li  #element3{
-    width:500px
+    width:500px;
+    flex-direction: column;
+}
+#start nav.middle ul li #element4{
+    flex-direction: column;
+    width: 500px;
 }
 #start nav.middle ul li .content .up-4{
     display: flex;
@@ -337,8 +336,7 @@
 }
 #start nav.middle ul li .content span{
     font-size: 25px;
-    font-weight: 800;
-    
+    font-weight: 800;   
 }
 #start nav.middle ul li .content .down-4 ul{
     display: block;
@@ -374,6 +372,7 @@
 #start nav.right{
    margin-left: 70px;
    display: flex;
+   padding-top: 10px;
    padding-bottom: 40px;
 }
 #start nav.right ul{
@@ -398,26 +397,36 @@
 }
 
 #start nav.right ul li:last-child{
-    margin-right: 0px;
+    /* margin-right: 0px; */
 }
+
 #start nav.right a{
     padding: 10px 12px;
     border-radius: 30px;
-    background-color: white;
-    color: black;
     font-size: 16px;
+    font-family: 'UberMovetext';
     font-weight: 500;
     white-space: nowrap;
     margin-right:10px
 }
+#start nav.right i{
+    font-size: 20px;
+}
 #start nav.right a i{
-    margin-right: 5px;
+    margin-right: 10px;
+    
+}
+#start nav.right a.login{
+    background-color: transparent;
+    color: #fff;
 }
 #start nav.right a.btn{
-    padding-bottom: 10px;
+    color: black;
+    background-color: white;
 }
-#start nav.right ul .btn:hover{
-    cursor: pointer;
+#start nav.right a.login:hover{
+    background-color: rgb(68, 68, 68);
+    border-radius: 20px;
 }
 #spotlight{
     background-color:#ebeef6;
@@ -438,6 +447,12 @@
     display: flex;
     gap:10%;
 }
+#spotlight .elements .left{
+    width:50%;
+}
+#spotlight .elements .right{
+    width:50%;
+}
 #spotlight .elements .image{
     width:40%;
     margin-bottom: 20px;
@@ -451,26 +466,28 @@
     font-weight: 500;
 }
 #spotlight .elements ul{
-    padding:20px 0 50px 50px
+    padding:20px 0 50px 40px;
+    
     
 }
 #spotlight .elements ul li{
-    font-size: 16px;
+    list-style-type: disc;
+    font-size: 18px;
     line-height: 1.5em;
     font-weight: 400;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 #spotlight a{
     color:#ffffff;
     background-color: black;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    padding:20px 20px;
+    padding:20px 25px;
     
 }
 #spotlight a:hover{
-    cursor: pointer;
+    /* cursor: pointer; */
     opacity:0.8;
     transition: 0.1s;
 }
@@ -478,7 +495,7 @@
     background-color: rgb(249,250,251);
 }
 #second .content{
-    padding:100px 0 90px 50px;
+    padding:60px 0 90px 50px;
 }
 #second .content h2{
     font-size: 35px;
@@ -498,7 +515,7 @@
 }
 
 #second .element-cntnt .icon{
-    width:5%;
+    width:6%;
     margin-bottom: 30px;
 }
 #second .element-cntnt .icon img{
@@ -506,11 +523,15 @@
     display: block;
 }
 #second .element-cntnt h4{
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'UberMoveText';
+    font-weight: 500;
     margin-bottom: 20px;
 }
 #second .element-cntnt p{
     font-size: 16px;
+    font-family: 'UberMoveText';
+    font-weight: 400;
     width: 85%;
     color:rgb(42,40,40);
 }

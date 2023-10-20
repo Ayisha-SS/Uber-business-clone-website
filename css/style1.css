@@ -426,32 +426,39 @@
     background-color: rgb(68, 68, 68);
     border-radius: 20px;
 }
+
 #home nav.right ul li :last-child{
-    margin-right: 0px;
+    /* margin-right: 0px; */
 }
 
 #home nav.right  a{
     padding:10px 12px ;
-    text-decoration: none;
     border-radius: 30px;
-    background-color: white;
-    color:black;
     font-size: 16px;
     font-family: 'UberMoveText';
     font-weight: 500; 
     white-space: nowrap;
     margin-right: 10px;
 }
+#home nav.right i{
+    font-size: 20px;
+}
 #home nav.right a i{
     margin-right: 5px;
 }
-#home nav.right a .btn{
-    padding-bottom: 10px;
+#home nav.right a.login{
+    background-color: transparent;
+    color: #fff;
     
 }
+#home nav.right a.btn{
+    color:black;
+    background-color: white;
+}
 
-#home nav.right ul .btn:hover{
-    cursor: pointer;
+#home nav.right  a.login:hover{
+    background-color: rgb(68, 68, 68);
+    border-radius: 20px;
 }
 #spotlight{
     padding-top:100px;
@@ -536,14 +543,14 @@
 #spotlight .bottom .content ul li h3{
     color:#ffffff;
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 #spotlight .bottom .content ul li p{
     color:#ffffff;
     margin-top: 20px;
     padding-bottom: 110px;
-    font-size:20px;
+    font-size:18px;
     line-height: 1.5;
     font-weight: normal;
 
@@ -590,6 +597,8 @@
 }
 #second .content-down h2{
     font-size: 40px;
+    font-family: 'UberMoveText';
+    font-weight: 600;
 }
 #second .content-down .content{
     display: flex;
@@ -636,13 +645,13 @@
     width:85%
 }
 #second .contents .right h3{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 24px;
     margin-bottom: 20px;
 }
 #second .contents .right p{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: normal;
     line-height: 1.5em;
 }
@@ -673,7 +682,7 @@
     padding:0 50px;
 }
 #third .content h2{
-    font-size: 45px;
+    font-size: 38px;
     text-align: center;
     padding:0 200px
     
@@ -689,7 +698,7 @@
 #third .content-dwn{
     display:flex;
     gap:10%;
-    margin-bottom: 50px;
+    margin: 50px 0 30px 0;
 }
 #third .content-dwn .left{
     width:26%;
@@ -725,11 +734,13 @@
 }
 #fourth{
     background-color: rgb(21, 21, 94);
-    padding:100px ;
+    padding:70px ;
     display: block;
 }
 #fourth h1{
-    font-size: 50px;
+    font-size: 36px;
+    font-family: 'UberMoveText';
+    font-weight: 600;
     color:#ffffff;
     text-align: center;
     padding: 0 200px;
@@ -740,22 +751,23 @@
     justify-content: center;
 }
 #fourth button{
-    font-size: 20px;
+    font-size: 18px;
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 20px 20px;
 }
 #fourth button:hover{
     cursor: pointer;
     background-color: rgb(250, 252, 252);
 }
 #fifth{
-    padding:50px;
+    padding:100px 50px 50px;
 }
 #fifth .content h2{
     font-size: 40px;
+    font-family: 'UberMoveText';
     margin-bottom: 50px;
-    font-weight:700 ;
+    font-weight:900 ;
 }
 #fifth .content .element{
     display:flex;
@@ -773,13 +785,15 @@
     display: block;
 }
 #fifth .element-1 h4{
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'UberMoveText';
     margin-top: 20px;
     margin-bottom: 40px;
-    font-weight: 400;
+    font-weight: 500;
 }
 #fifth .element-1 a{
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400;
     color:black;
     cursor: pointer; 
 }
@@ -802,10 +816,11 @@
     padding:60px 0 30px 0 ;
 }
 #fifth .content-down p{
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'UberMoveText';
     margin-bottom: 30px;
     color:#000;
-    font-weight: 200;
+    font-weight: 400;
 }
 #fifth .content-down p a{
     color:black;
@@ -966,6 +981,10 @@
     cursor: pointer;
     opacity: 0.9;
     transition: 0.1s;
+}
+
+i.style{
+    transform: rotate(180deg);
 }
 
 
