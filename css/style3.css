@@ -207,3 +207,21 @@
     color: black;
     cursor: pointer;
 }
+
+#log-main{
+  padding: 50px;
+  text-align: center;
+}
+#log-main .log{
+  font-size: 20px;
+  margin: 10px;
+}
+
+#log-main .log a{
+  text-decoration: none;
+  margin: 10px;
+  border:1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
