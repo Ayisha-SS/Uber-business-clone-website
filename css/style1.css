@@ -986,6 +986,39 @@ i.style{
     margin: 10px 0 20px;
 }
 
+/* log-pop */
+
+.login-popup{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index:1099;
+    background-color: rgba(0,0,0,0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.login-popup.show{
+    visibility: visible;
+    opacity: 1;
+}
+.login-popup .box{
+    background-color: #fff;
+    width:750px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 1;
+    margin-left: 50px;
+    transition: all 1s ease;
+
+}
+
 
 
 

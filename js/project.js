@@ -109,9 +109,23 @@ function SaveDatas(){
 }
 
 
-$(window).load(function(){
-  window.location = `/workspace.html`
+// log-popup
+
+const loginPopup = document.querySelector('.login-popup');
+
+window.addEventListener('load',function(){
+
+  setTimeout(function(){
+    loginPopup.classList.add('show');
+  },2000)
 })
+
+close.addEventListener('click',function(){
+  loginPopup.classList.remove('show')
+})
+
+
+
 
 
 
