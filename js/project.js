@@ -78,8 +78,8 @@ function SaveData(){
           'password':password
       })
       localStorage.setItem('users',JSON.stringify(user_records));
-      // alert('Successfully');
-      window.location.href = 'home.html'
+      alert('Successfully');
+      window.location.href = 'form.html'
   }
 }
 
@@ -110,20 +110,28 @@ function SaveDatas(){
 
 
 // log-popup
-
+// const user_value = localStorage.getItem(user_records)
 const loginPopup = document.querySelector('.login-popup');
 
 window.addEventListener('load',function(){
 
-  setTimeout(function(){
-    loginPopup.classList.add('show');
-  },2000)
+  // if(user_value = user_records){
+  //   window.location.reload()
+
+  // }
+
+    setTimeout(function(){
+      loginPopup.classList.add('show');
+    },2000)
+  
+
 })
 
-close.addEventListener('click',function(){
-  loginPopup.classList.remove('show')
-})
 
+// if(!window.location.hash) {
+//   window.location = window.location + '#loaded';
+//   window.location.reload(false);
+// }
 
 
 

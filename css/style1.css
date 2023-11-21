@@ -1006,17 +1006,37 @@ i.style{
 }
 .login-popup .box{
     background-color: #fff;
-    width:750px;
+    /* width:750px; */
     position: absolute;
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     opacity: 1;
     margin-left: 50px;
     transition: all 1s ease;
+    padding: 50px;
 
+}
+.login-popup .box h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.login-popup .box .link{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.login-popup .box .link a{
+    /* text-decoration: none; */
+    color:black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
 }
 
 
